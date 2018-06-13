@@ -1,0 +1,12 @@
+appender:
+  console:
+    type: Console
+    name: console
+    layout:
+      type: PatternLayout
+      pattern: [%t] %-5p $c - %m%n
+rootLogger:
+  level: info
+  appenderRef:
+    console:
+      ref: console
